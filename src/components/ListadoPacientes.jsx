@@ -12,13 +12,11 @@ const ListadoPacientes = ({ pacientes }) => {
         </span>
       </p>
 
-      {pacientes.map( paciente => (
+      {pacientes.map((paciente) => (
         <Paciente 
-            paciente={paciente}
-        />
+        key={paciente.id}
+        paciente={paciente} />
       ))}
-
-      <Paciente />
     </div>
   );
 };
